@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<!--Se integra el modulo de Angular -->
+
+<head>
+  <link rel="shortcut icon" href="../sources/frio-express-logo.png">
+  <!--Agregar Icono-->
+  <meta charset="UTF-8">
+  <title>Login</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="../css/estilo.css">
+
+  <!--Indicacion de Angular-->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.2/angular.min.js"></script>
+  <!--Libreria para agregarle el Route-->
+  <script src="https://code.angularjs.org/1.7.2/angular-route.min.js"></script>
+  <!--Indicacion del archivo del modulo de angular-->
+  <script src="../JavaScript/login.module.js"></script>
+  <script src="../JavaScript/Route.js"></script>
+  <script src="../JavaScript/login.js"></script>
+  <!--Indicacion del archivo del modulo de angular para el Route -->
+</head>
+<!-- <body ng-app='login-module'> -->
+
+<body ng-app='login-module'>
+  <div class="modal-dialog" ng-controller='login-controller'>
+    <div id="login" class="modal-content">
+      <div class="modal-header text-center">
+        <img id="frio" src="../sources/frio-express-logo.png">
+      </div>
+      <div class="modal-body">
+        <form class="col-md-12" ng-submit="boton()">
+            <div class="form-group">
+              <input type="text" name="usuario" placeholder="&#128272; Usuario" class="user form-control input-lg" required autofocus ng-model="usuario">
+            </div>
+            <div class="form-group">
+              <input type="password" name="contrasena" placeholder=" &#128272; Ingresa tu contraseña" class="form-control input-lg" required ng-model="contra">
+            </div>
+            <div class="form-group">
+              <input type="submit" name="boton" value="login" class="btn btn-primary btn-lg btn-block" href="pag.html#/pagina">
+            </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+</body>
+
+</html>
