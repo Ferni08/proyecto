@@ -1,0 +1,117 @@
+<ac-titulo></ac-titulo>
+<br>
+<!-- <div class="input-group">
+  <span class="input-group-addon">Buscar: &nbsp; </span>
+  <input id="filtrar" type="text" class="form-control" placeholder="Buscar Registro..."><br>
+<br><br>
+</div> -->
+<div>
+<table class="table table-hover"> <!--Campos a llenar con la base de datos-->
+ <thead>
+  <tr>
+    <th>Unidad</th>
+    <th>Circulo</th>
+    <th>Distancia</th>
+    <th>Tiempo</th>
+    <th>ETA_Calculado</th>
+    <th>Ultima_Posición del tractor</th>
+    <th>Destino</th>
+    <th>Carga</th>
+    <th>Hora_de_carga</th>
+    <th>Descarga</th>
+    <th>Hora_d</th>
+    <th>Viaje</th>
+    <th>Operador</th>
+    <th>Caja</th>
+    <th>Temperatura</th>
+    <th>Status</th>
+    <th>Cd_oper</th>
+    <th>Edo_oper</th>
+    <th>Set_point</th>
+    <th>Origen</th>
+    <th>Supply</th>
+    <th>Retorno</th>
+    <th>Cliente</th>
+    <th>Zona</th>
+    <th>Grupo_de Trabajo</th>
+    <th>Edo_Destino</th>
+    <th>Tiempo_destino</th>
+    <th>Fecha_ETA</th>
+    <th>Hora_ETA</th>
+    <th>Hrs_ruta</th>
+    <th>Partida</th>
+    <th>En_Patio</th>
+    <th>Alerta</th>
+    <th>Ruta</th>
+    <th>Sin_pos Otshield</th>
+    <th>Ignicion</th>
+    <th>ST_Otshield</th>
+    <th>Fecha_Otshield</th>
+    <th>Hora_Otshield</th>
+    <th>Ultima_Posicion de_Otshield</th>
+    <th>Sin_movimiento</th>
+    <th>Sin_Posicion</th>
+    <th>Ignicion</th>
+    <th>Fecha_Ultima Posicion</th>
+    <th>Hora_Ultima Posicion</th>
+    <th>Hora_Ultima Posicion_Caja</th>
+    <th>Fecha_Ultima Posicion_caja</th>
+    <th>Ultima_Posicion Caja</th>
+  </tr>
+ </thead>
+<tbody>
+
+<!--Resultados-->
+<tr ng-repeat="usuario in equipo"> <!--Nueva variable (Usuario) para almacenar los resltados del query (Equipo)-->
+  <td>{{usuario.no_cdc}}</td>
+  <td>{{usuario.circu_serv}}</td>
+  <td>{{usuario.dist}}</td>
+  <td>{{usuario.horas}}</td>
+  <td>{{usuario.eta_pos}}</td>
+  <td>{{usuario.pinteres}}</td>
+  <td>{{usuario.destino}}</td>
+  <td>{{usuario.fecha_carga}}</td>
+  <td>{{usuario.hora_c}}</td>
+  <td>{{usuario.fecha_descarga}}</td>
+  <td>{{usuario.hora_d}}</td>
+  <td>{{usuario.no_pedido}}</td>
+  <td>{{usuario.no_oper}}</td>
+  <td>{{usuario.no_caja}}</td>
+  <td>{{usuario.temp}}</td>
+  <td>{{usuario.st_unidad}}</td>
+  <td>{{usuario.cve_ciud}}</td>
+  <td>{{usuario.cve_edo}}</td>
+  <td>{{usuario.set_point}}</td>
+  <td>{{usuario.origen}}</td>
+  <td>{{usuario.supply}}</td>
+  <td>{{usuario.retorno}}</td>
+  <td>{{usuario.nickname}}</td>
+  <td>{{usuario.zona}}</th>
+  <td>{{usuario.grupo}}</td>
+  <td>{{usuario.edo}}</td>
+  <td>{{usuario.dias_destino}}</td>
+  <td>{{usuario.fecha_estimada}}</td>
+  <td>{{usuario.hora_e}}</td>
+  <td>{{usuario.hrs_ruta}}</td>
+  <td>{{usuario.partida}}</td>
+  <td>{{usuario.patio}}</td>
+  <td>{{usuario.alerta}}</td>
+  <td>{{usuario.evento}}</td>
+  <td>{{usuario.sin_posicion_shield}}</td>
+  <td>{{usuario.s_ignition}}</td>
+  <td>{{usuario.s_status}}</td>
+  <td>{{usuario.s_fultpos}}</td>
+  <td>{{usuario.s_hultpos}}</td>
+  <td>{{usuario.s_pinteres}}</td>
+  <td>{{usuario.sin_mov}}</td>
+  <td>{{usuario.sin_posicion}}</td>
+  <td>{{usuario.ignicion}}</td>
+  <td>{{usuario.fultpos}}</td>
+  <td>{{usuario.hultpos}}</td>
+  <td>{{usuario.hultpos_caja}}</td>
+  <td>{{usuario.fultpos_caja}}</td>
+  <td>{{usuario.pinteres_caja}}</td>
+</tr>
+</tbody>
+</table>
+</div>

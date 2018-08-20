@@ -1,0 +1,22 @@
+body{
+ background-image: url('/proyecto/menu/fondo.jpg');
+}
+
+
+div{
+    border-top: none !important;
+ }
+
+ #login{
+    background: rgba(255,255,255,0.8);
+    /* margin-left: -35%;
+    margin-top: 30%;
+    border-radius: 5%; */
+}
+
+#frio{
+    width: auto;
+    height: auto;
+    margin: auto;
+    display: block;
+}

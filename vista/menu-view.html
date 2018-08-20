@@ -1,29 +1,48 @@
-<div class="menu_bar">
-  <a href="#" class="bt-menu"><span class="icon-home"></span>Menú</a>
-</div>
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <a class="navbar-brand" href="">
+      <!-- <img src="menu\icon6.png" width="25" height="25" class="d-inline-block align-top" alt=""> -->Menu Principal
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <span class="navbar-toggler-icon"></span>
+</button>
 
-<nav>
-  <ul>
-    <li><a href="#"><span class="icon-folder"></span>Catalogos</a></li>
-    <li class="submenu">
-      <a href="#"><span class="icon-stats-dots"></span>Procesos<span class="caret icon-arrow-down2"></span></a>
-      <ul class="children">
-        <li><a href="#">Tablero de unidades<span class="icon-truck"></span></a></li>
-        <li><a href="#">Tablero de cajas<span class="icon-drawer2"></span></a></li>
-        <li><a href="#">Tablero de monitoreos<span class="icon-display"></span></a></li>
-        <li><a href="#">Tablero para mantenimientro<span class=" icon-wrench"></span></a></li>
-      </ul>
-    </li>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="">
+           <img src="menu\dos.png" width="25" height="25" class="d-inline-block align-top" alt=""> Catalogo
+           <span class="sr-only"></span></a>
+      </li>
 
-    <li><a href="#"><span class="icon-file-text2"></span>Reporte</a></li>
-
-    <li class="submenu">
-      <a href="#"><span class="icon-terminal"></span>Sistema<span class="caret icon-arrow-down2"></span></a>
-      <ul class="children">
-        <li><a href="#"><span class="icon-user"></span>Usuarios </a></li>
-      </ul>
-    </li>
-
-    <li><a href="#"><span class="icon-exit"></span>Salir</a></li>
-  </ul>
+      <li class="nav-item dropdown active">
+        <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <img src="menu\icon8.png" width="25" height="25" class="d-inline-block align-top" alt=""> Procesos
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="">
+          <img src="menu\icon10.png" width="25" height="25" class="d-inline-block align-top" alt="" id="caja"  > Tablero de cajas</a>
+          <a class="dropdown-item" href="">
+          <img src="menu\icon9.png" width="25" height="25" class="d-inline-block align-top" alt="" id="mantenimiento"> Tablero de mantenimiento</a>
+          <a class="dropdown-item" href="">
+          <img src="menu\icon11.png" width="25" height="25" class="d-inline-block align-top" id="monitoreo"> Tablero de monitoreos</a>
+          <a class="dropdown-item" href="">
+          <img src="menu\icon1.png" width="25" height="25" class="d-inline-block align-top" alt="" id="tabla" ng-click="importar()"> Tablero de unidades</a>
+        </div>
+      </li>
+      <li class="nav-item ">
+        <a class="nav-link" href="">
+         <img src="menu\cuatro.png" width="25" height="25" class="d-inline-block align-top" alt=""> Reporte</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link disabled" href="">
+           <img src="menu\tres.png" width="25" height="25" class="d-inline-block align-top" alt=""> Sistema </a>
+      </li>
+    </ul>
+    <form class="form-inline my-4 my-lg-0">
+<!-- <button type="button" class="btn btn-danger" href="#"> Salir</button> -->
+<a href="#" class="btn btn-danger" role="button" aria-pressed="true">
+<img src="menu\icon7.png" width="25" height="25" class="d-inline-block align-top" alt="">
+   Salir</a>
+    </form>
+  </div>
 </nav>
