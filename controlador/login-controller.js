@@ -3,8 +3,9 @@ angular
   .controller('login-controller', Login); // Declaración del controlador
   // controller('nombre', funcion a usar);
   // .controller('routecontroller',routing); // Declaracion del controlador route
+
 function Login($scope, $http, $location) {
-  alert('holis controlador');
+  // alert('holis controlador');
   $scope.boton = Llamada;
   function Llamada() {
     // alert('Vamos a enviar usuasrio: ' + $scope.usuario + ' y contraseña: ' + $scope.contra);
@@ -20,8 +21,8 @@ function Login($scope, $http, $location) {
         alert('Los datos ingresados no son correctos');
       } else {
         alert('Los datos son correctos');
-          location.href=("pag.html");
+          location.href=("#!tabla");
       }
-    });
+    })
   }
 }

@@ -8,7 +8,8 @@ angular
       templateUrl : "vista/login-view.html",
       controller: "login-controller"
     })
-    .when("/menu", {
-      templateUrl : "vista/menu-view.html"
+    .when("/tabla", {
+      templateUrl : "vista/tabla-view.html",
+      controller: "tabla-controller"
     })
   }
