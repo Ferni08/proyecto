@@ -6,7 +6,8 @@ angular
 function tabla($scope, $http, $location) {
   $scope.importar = function rcaja() {
     $http.get('modelo/tabla.php').then(function(datos){ //Pedir la info. de la consulta
-      $scope.equipo = datos;  //Guardar los datos en una nueva vriable
+      $scope.equipo = datos['data'];  //Guardar los datos en una nueva vriable
+      console.log($scope.equipo);
     });
   }
   $scope.importar();

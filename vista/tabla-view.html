@@ -1,14 +1,36 @@
 <ac-titulo></ac-titulo>
 <br>
-<!-- <div class="input-group">
-  <span class="input-group-addon">Buscar: &nbsp; </span>
-  <input id="filtrar" type="text" class="form-control" placeholder="Buscar Registro..."><br>
+<div class="input-group">
+  <span class="input-group-addon" style="color:dark; font-weight:bold">Buscar: &nbsp; </span>
+  <input id="filtrar" ng-model="busqueda" type="text" class="form-control" placeholder="Buscar Registro..."><br>
 <br><br>
+</div>
+
+<!-- <div class="row">
+  Filtro por:
+  <br>
+  <select class="form-control">
+    <option value="">Cualquiera </option>
+    <option value="">Circulo </option>
+    <option value="">Destino  </option>
+    <option value="">Viaje </option>
+    <option value="">Operador </option>
+    <option value="">Caja </option>
+    <option value="">Status </option>
+    <option value="">Origen </option>
+    <option value="">Cliente </option>
+    <option value="">Zona </option>
+    <option value="">Grupo de Trabajo </option>
+    <option value="">Ruta </option>
+    <option value="">Ultima Posicion de Caja </option>
+    <option value=""> </option>
+
 </div> -->
-<div>
-<table class="table table-hover"> <!--Campos a llenar con la base de datos-->
+
+<div class="table-responsive-sm">
+<table class="table table-hover table-sm table-dark table-bordered table-striped"> <!--Campos a llenar con la base de datos-->
  <thead>
-  <tr>
+  <tr class="bg-primary">
     <th>Unidad</th>
     <th>Circulo</th>
     <th>Distancia</th>
@@ -62,7 +84,7 @@
 <tbody>
 
 <!--Resultados-->
-<tr ng-repeat="usuario in equipo"> <!--Nueva variable (Usuario) para almacenar los resltados del query (Equipo)-->
+<tr ng-repeat="usuario in equipo | filter:busqueda "> <!--Nueva variable (Usuario) para almacenar los resltados del query (Equipo)-->
   <td>{{usuario.no_cdc}}</td>
   <td>{{usuario.circu_serv}}</td>
   <td>{{usuario.dist}}</td>
@@ -111,6 +133,8 @@
   <td>{{usuario.hultpos_caja}}</td>
   <td>{{usuario.fultpos_caja}}</td>
   <td>{{usuario.pinteres_caja}}</td>
+
+
 </tr>
 </tbody>
 </table>

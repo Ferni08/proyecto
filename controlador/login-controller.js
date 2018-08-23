@@ -4,6 +4,7 @@ angular
   // controller('nombre', funcion a usar);
   // .controller('routecontroller',routing); // Declaracion del controlador route
 
+
 function Login($scope, $http, $location) {
   // alert('holis controlador');
   $scope.boton = Llamada;
